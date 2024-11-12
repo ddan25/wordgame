@@ -6,6 +6,7 @@ import { maskLettersInWord, guessLetter, saveAndReturnGame, handleWin } from '..
 
 
 
+
 export const getInitialGameState = async (_req: Request, res: Response) => {
   try {
     const words = await Word.aggregate<IWord>([
