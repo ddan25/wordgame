@@ -4,6 +4,7 @@ import { type IGame, Game } from '../models/Game.js';
 import { maskLettersInWord, guessLetter, saveAndReturnGame, handleWin } from '../services/gameServices.js';
 
 
+
 export const getInitialGameState = async (_req: Request, res: Response) => {
   try {
     const words = await Word.aggregate<IWord>([
