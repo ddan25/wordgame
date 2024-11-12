@@ -19,12 +19,6 @@ jobs:
 workflows:
   run-tests:
     jobs:
-      - build-job:
-      filters:
-      branches:
-        only: 
-        - main
-        - develop
       - start-server
       - cypress/run:
           name: run-component-tests
